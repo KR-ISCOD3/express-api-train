@@ -12,5 +12,9 @@ app.use(logger);
 // Routes
 app.use("/api/products", productRoutes);
 
+app.get('/',(req,res)=>{
+    res.send('Hello Bong nh ot jes te')
+})
+
 // Start server
 app.listen(PORT, () => console.log(`Server running on port  http://localhost:${PORT}`));
